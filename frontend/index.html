@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Sharing App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="img/shared-folder_16926903.png" alt="App Logo" class="logo">
+    <h1>File Vault</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Upload Your File</h2>
+      <input type="file" id="fileInput">
+      <button type="button" id="uploadBtn">Upload</button>
+
+      <div class="result" id="result"></div>
+
+      <div class="email-share" id="emailShare" style="display: none;">
+        <h3>📧 Share via Email</h3>
+        <input type="email" id="senderEmail" placeholder="Your Email">
+        <input type="email" id="receiverEmail" placeholder="Receiver's Email">
+        <button type="button" id="sendEmailBtn">Send</button>
+        <div class="email-status" id="emailStatus"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 File Vault. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
